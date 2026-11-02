@@ -254,6 +254,17 @@ footer li a:hover{color:var(--ink)}
 .rev-cta p{font-family:var(--serif);font-size:24px;font-style:italic;color:var(--ink-2);max-width:640px;margin:0 auto 26px;line-height:1.35}
 .rev-cta .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
 /* modal */
+.mbar{display:none}
+@media(max-width:820px){
+  .mbar{display:flex;align-items:center;gap:14px;position:sticky;top:0;z-index:5;grid-column:1/-1;background:rgba(251,248,242,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:14px 18px;height:56px}
+  .mback{background:none;border:0;font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);display:flex;align-items:center;gap:8px;white-space:nowrap;padding:6px 0;cursor:pointer}
+  .mback span{font-size:18px;letter-spacing:0;line-height:1}
+  .mtitle{font-family:var(--serif);font-size:16px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--muted);flex:1;text-align:right}
+  .modal .x{display:none}
+}
+.back-all{width:100%;margin-top:30px;padding:15px;border:1px solid var(--ink);background:none;color:var(--ink);font-size:11px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;cursor:pointer;-webkit-appearance:none;border-radius:0}
+.back-all:hover{background:var(--ink);color:var(--ivory)}
+
 .modal-bg{position:fixed;inset:0;background:rgba(30,23,18,.55);backdrop-filter:blur(4px);z-index:110;display:none;align-items:center;justify-content:center;padding:28px}
 .modal-bg.open{display:flex;animation:fade .35s var(--ease)}
 @keyframes fade{from{opacity:0}to{opacity:1}}
@@ -581,6 +592,7 @@ footer li a:hover{color:var(--ink)}
 
 <div class="modal-bg" id="modalBg" onclick="if(event.target===this)closeProduct()">
   <div class="modal" role="dialog" aria-modal="true">
+    <div class="mbar"><button class="mback" onclick="closeProduct()" aria-label="Back to shop"><span>←</span> Back to shop</button><span class="mtitle" id="mTitle"></span></div>
     <button class="x" onclick="closeProduct()" aria-label="Close"></button>
     <div class="gal">
       <div class="gal-main"><div id="galMedia" style="width:100%;height:100%"></div>
@@ -744,7 +756,7 @@ function toast(m){ const t=document.getElementById("toast"); t.textContent=m; t.
 
 let gal=[],gi=0;
 const poster=g=>g.replace(/\.mp4$/i,"-poster.jpg");
-function openProduct(id){
+function openProduct(id, fromHistory){
   const p=products.find(x=>x.id===id);
   gal=p.gallery||(p.img?[p.img]:[]); gi=0;
   document.querySelector('.gal').style.display=gal.length?'':'none';
@@ -763,8 +775,13 @@ function openProduct(id){
     ${vids(p).length?`<h4>See it in action</h4><div class="reels">${vids(p).map(v=>isVid(v)?`<div class="reel"><video src="${v}" poster="${poster(v)}" autoplay muted loop playsinline preload="metadata"></video><button class="snd" onclick="togSound(this)" aria-label="Sound">🔇</button></div>`:`<div class="reel"><img src="${v}" alt=""></div>`).join("")}</div>`:""}
     ${p.highlights?`<h4>Key ingredients</h4><ul class="hl">${p.highlights.map(h=>`<li><b>${clean(h[0])}</b>${h[1]}</li>`).join("")}</ul>`:""}
     ${p.howto?`<h4>How to use</h4><p class="howto">${p.howto}</p>`:""}
-    <p class="fine">Made in South Korea · Patch test before first use</p>`;
+    <p class="fine">Made in South Korea · Patch test before first use</p>
+    <button class="back-all" onclick="closeProduct()">← Back to all products</button>`;
   if(window.gtag) gtag('event','view_item',{items:[{item_name:p.name,item_brand:'MUMUKI'}]}); if(window.fbq) fbq('track','ViewContent',{content_name:p.name});
+  document.getElementById('mTitle').textContent=p.name;
+  document.querySelector('.modal').scrollTop=0;
+  if(!document.getElementById('modalBg').classList.contains('open')) window.__shopY=scrollY;
+  if(!fromHistory){ history.pushState({product:id},'', '#product-'+id); }
   document.getElementById('modalBg').classList.add('open'); document.body.style.overflow='hidden';
 }
 function show(i){ gi=(i+gal.length)%gal.length; const g=gal[gi];
@@ -775,7 +792,8 @@ function show(i){ gi=(i+gal.length)%gal.length; const g=gal[gi];
   document.querySelectorAll('#thumbs > *').forEach((t,k)=>t.classList.toggle('on',k===gi)); }
 function step(d){ show(gi+d); }
 function togSound(b){const v=b.previousElementSibling;v.muted=!v.muted;if(!v.muted)v.play();b.textContent=v.muted?'🔇':'🔊';}
-function closeProduct(){ document.querySelectorAll('.reels video').forEach(v=>v.pause()); document.getElementById('galMedia').innerHTML=''; document.getElementById('modalBg').classList.remove('open'); document.body.style.overflow=''; }
+function closeProduct(viaPop){
+  if(!viaPop && history.state && history.state.product){ history.back(); return; } document.querySelectorAll('.reels video').forEach(v=>v.pause()); document.getElementById('galMedia').innerHTML=''; document.getElementById('modalBg').classList.remove('open'); document.body.style.overflow=''; if(window.__shopY!=null){const y=window.__shopY; requestAnimationFrame(()=>scrollTo(0,y)); setTimeout(()=>scrollTo(0,y),60);} }
 document.addEventListener('keydown',e=>{ if(!document.getElementById('modalBg').classList.contains('open'))return;
   if(e.key==='Escape')closeProduct(); if(e.key==='ArrowRight')step(1); if(e.key==='ArrowLeft')step(-1); });
 let tx=0; const gm=document.querySelector('.gal-main');
@@ -811,6 +829,16 @@ document.getElementById("signupForm").addEventListener("submit", async e=>{
   btn.addEventListener('click',()=>{y=scrollY});
 })();
 render();
+
+/* phone/browser Back button closes the product page */
+if('scrollRestoration' in history) history.scrollRestoration='manual';
+window.addEventListener('popstate',e=>{
+  const open=document.getElementById('modalBg').classList.contains('open');
+  if(e.state && e.state.product){ openProduct(e.state.product,true); }
+  else if(open){ closeProduct(true); }
+});
+/* open a product directly from a shared link like mumiki.in/#product-3 */
+(function(){const m=location.hash.match(/^#product-(\d+)$/); if(m && products.find(p=>p.id==m[1])){ history.replaceState(null,'',location.pathname); openProduct(+m[1]); }})();
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 </script>
