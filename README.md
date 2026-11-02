@@ -1,4 +1,4 @@
-# mumiki.in — MUMUKI India
+# mumuki.in — MUMUKI India
 
 Website for MUMUKI India (Honey Banana PDRN Korean skincare), imported and marketed in India by Beauty Mart Pvt Ltd.
 

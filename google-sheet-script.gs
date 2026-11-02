@@ -1,6 +1,6 @@
 /**
  * MUMUKI India – launch-list sign-ups → Google Sheet
- * 1. Create a Google Sheet named "mumiki.in sign-ups".
+ * 1. Create a Google Sheet named "mumuki.in sign-ups".
  * 2. Extensions → Apps Script. Delete everything, paste this file, Save.
  * 3. Deploy → New deployment → type "Web app".
  *    Execute as: Me.  Who has access: Anyone.  → Deploy → Authorise.
