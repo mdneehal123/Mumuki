@@ -82,6 +82,10 @@ header{position:sticky;top:0;z-index:50;background:rgba(251,248,242,.9);backdrop
 .menu-toggle{display:none;background:none;border:0;cursor:pointer;width:26px;height:18px;position:relative}
 .menu-toggle i{position:absolute;left:0;right:0;height:1px;background:var(--ink)}
 .menu-toggle i:nth-child(1){top:2px}.menu-toggle i:nth-child(2){top:9px}.menu-toggle i:nth-child(3){top:16px}
+.menu-toggle i{transition:transform .3s,opacity .3s}
+.menu-toggle.open i:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.menu-toggle.open i:nth-child(2){opacity:0}
+.menu-toggle.open i:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 
 /* hero */
 .hero{padding:70px 0 110px;position:relative;overflow:hidden}
@@ -358,7 +362,7 @@ footer li a:hover{color:var(--ink)}
 
 <header>
   <div class="wrap nav">
-    <button class="menu-toggle" aria-label="Menu" onclick="document.getElementById('navLinks').classList.toggle('open')"><i></i><i></i><i></i></button>
+    <button class="menu-toggle" id="menuBtn" aria-label="Menu" aria-expanded="false"><i></i><i></i><i></i></button>
     <nav class="nav-links" id="navLinks">
       <a href="#shop">Shop</a>
       <a href="#bdrn">BDRN</a>
@@ -795,6 +799,17 @@ document.getElementById("signupForm").addEventListener("submit", async e=>{
     toast("Almost done · send the WhatsApp message"); f.reset();
   }
 });
+
+/* mobile menu: open/close, auto-close on link tap, outside tap or scroll */
+(function(){
+  const btn=document.getElementById('menuBtn'), nav=document.getElementById('navLinks');
+  const set=o=>{nav.classList.toggle('open',o);btn.classList.toggle('open',o);btn.setAttribute('aria-expanded',o)};
+  btn.addEventListener('click',e=>{e.stopPropagation();set(!nav.classList.contains('open'))});
+  nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>set(false)));
+  document.addEventListener('click',e=>{if(nav.classList.contains('open')&&!nav.contains(e.target))set(false)});
+  let y=0;window.addEventListener('scroll',()=>{if(nav.classList.contains('open')&&Math.abs(scrollY-y)>40)set(false)},{passive:true});
+  btn.addEventListener('click',()=>{y=scrollY});
+})();
 render();
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
