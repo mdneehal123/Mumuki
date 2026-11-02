@@ -114,6 +114,11 @@ section{padding:120px 0}
 .sec-head p{color:var(--muted);max-width:380px;font-weight:300}
 .center{text-align:center;justify-content:center;flex-direction:column;align-items:center}
 
+/* home videos */
+.home-vids{padding:0 0 110px}
+.hv-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:760px;margin:0 auto}
+.hv-grid .reel{aspect-ratio:9/16}
+@media(max-width:820px){.home-vids{padding:0 0 80px}.hv-grid{gap:10px}}
 /* BDRN */
 .bdrn{background:var(--ink);color:#EFE5D3;padding:130px 0;position:relative;overflow:hidden}
 .bdrn::before{content:"BDRN";position:absolute;right:-30px;top:30px;font-family:var(--serif);font-size:300px;line-height:1;color:rgba(255,255,255,.03);letter-spacing:.05em}
@@ -408,6 +413,15 @@ footer li a:hover{color:var(--ink)}
       <div class="inset"><img src="images/bdrn-cream.jpg" alt=""></div>
       <div class="hero-tag"><b>100,000 ppm</b>BDRN complex</div>
     </div>
+  </div>
+</section>
+
+
+<!-- HOME VIDEOS -->
+<section class="home-vids" id="videos">
+  <div class="wrap">
+    <div class="sec-head center reveal"><span class="eyebrow">See it in action</span><h2>Real <em>glow</em>, real texture</h2></div>
+    <div class="hv-grid reveal" id="homeReels"></div>
   </div>
 </section>
 
@@ -828,6 +842,10 @@ document.getElementById("signupForm").addEventListener("submit", async e=>{
   let y=0;window.addEventListener('scroll',()=>{if(nav.classList.contains('open')&&Math.abs(scrollY-y)>40)set(false)},{passive:true});
   btn.addEventListener('click',()=>{y=scrollY});
 })();
+/* home page video cards (uses SHARED_VIDEOS) */
+document.getElementById('homeReels').innerHTML=SHARED_VIDEOS.map(v=>isVid(v)
+  ?`<div class="reel"><video src="${v}" poster="${poster(v)}" autoplay muted loop playsinline preload="metadata"></video><button class="snd" onclick="togSound(this)" aria-label="Sound">🔇</button></div>`
+  :`<div class="reel"><img src="${v}" alt="" loading="lazy"></div>`).join("");
 render();
 
 /* phone/browser Back button closes the product page */
