@@ -88,8 +88,7 @@ def head(title, desc, path, image, ld):
 <meta name="description" content="{esc(desc)}">
 <meta name="theme-color" content="#1E1712">
 <link rel="canonical" href="{SITE}{path}">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="icon" href="/favicon-96.png" type="image/png" sizes="96x96"><link rel="icon" href="/favicon-192.png" type="image/png" sizes="192x192"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="MUMUKI India">
 <meta property="og:url" content="{SITE}{path}">
@@ -261,7 +260,7 @@ def article_page(g, path, crumbs_items, products, related):
     ld_items = [crumb_ld(crumbs_items),
                 {"@type": "Article", "headline": h1_plain, "description": g['desc'], "datePublished": UPDATED, "dateModified": UPDATED,
                  "author": {"@type": "Organization", "name": "MUMUKI India", "url": SITE + '/'},
-                 "publisher": {"@type": "Organization", "name": "MUMUKI India", "logo": {"@type": "ImageObject", "url": SITE + "/apple-touch-icon.png"}},
+                 "publisher": {"@type": "Organization", "name": "MUMUKI India", "logo": {"@type": "ImageObject", "url": SITE + "/images/logo-512.png"}},
                  "mainEntityOfPage": SITE + path, "image": SITE + '/' + (P[products[0]]['img'] if products else 'images/share.jpg')}]
     if g.get('faq'):
         ld_items.append({"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in g['faq']]})
