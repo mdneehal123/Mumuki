@@ -38,7 +38,7 @@ META = {
             pairs=[1, 14, 3], guides=['korean-glass-skin-routine-india', 'is-pdrn-safe', 'pdrn-for-indian-skin']),
     3: dict(slug='honey-banana-pdrn-cream-mist', seo='MUMUKI Honey Banana PDRN Cream Mist India',
             desc='MUMUKI Honey Banana PDRN Cream Mist: a two-layer mist with banana BDRN, milk extract and Manuka honey for hydration on the go. From Korea.',
-            suits=['Long days in AC offices', 'Oily or combination skin that wants light hydration', 'Refreshing skin over makeup or sunscreen'],
+            suits=['Long days in AC offices', 'Light hydration for most skin types; oily skin may prefer it over sunscreen only', 'Refreshing skin over makeup or sunscreen'],
             pairs=[1, 2, 4], guides=['pdrn-for-indian-skin', 'how-to-use-pdrn-serum', 'pdrn-benefits-for-skin']),
     4: dict(slug='honey-banana-pdrn-ampoule-mask', seo='MUMUKI Honey Banana PDRN Ampoule Sheet Mask (5 Pack) India',
             desc='MUMUKI Honey Banana PDRN Ampoule Mask: 5 sheet masks with banana BDRN, collagen and centella for an instant plump, glowing look. From Korea.',
@@ -212,15 +212,17 @@ def product_page(pid):
       <span class="note">Ask for the current price and availability. Cash on delivery available on most pin codes. <a href="/#notify" style="border-bottom:1px solid currentColor">Join the launch list</a> for 10% off your first order.</span>
     </div>
     {ext_html}
-    <h2>Key ingredients</h2>
+    <h2>Key ingredients (as described by MUMUKI)</h2>
     <ul class="hl">{hl}</ul>
+    <p class="note" style="font-size:12.5px;color:var(--muted)">Ingredient benefits, amounts and test results are the brand's own descriptions.</p>
     <h2>How to use</h2>
     <p>{esc(p['howto'])}</p>
     <h2>Who it suits</h2>
     <ul class="plain">{suits}</ul>
     <h2>Good to know</h2>
     <ul class="plain">
-      <li>Patch test behind the ear or on the inner arm for 24 hours before first use.</li>
+      <li>Patch test behind the ear or on the inner arm for 24 to 48 hours before first use.</li>
+      <li>Check the full ingredient list on the pack. Some MUMUKI products list retinol, and hydrolysed collagen whose source the brand does not state. If you are pregnant or breastfeeding, have a fish allergy or are vegetarian, message us before buying.</li>
       <li>Wear sunscreen every morning; it protects the results of any routine.</li>
       <li>Imported from Korea and sold in India by Beauty Mart Pvt Ltd, with an Indian importer label showing batch, MRP and expiry. See <a href="/genuine-mumuki-india/" style="border-bottom:1px solid currentColor">how to check a genuine pack</a>.</li>
       <li>New to PDRN? Read <a href="/guides/what-is-pdrn/" style="border-bottom:1px solid currentColor">what PDRN is</a> and <a href="/guides/plant-pdrn-vs-salmon-pdrn/" style="border-bottom:1px solid currentColor">how banana BDRN compares with salmon PDRN</a>.</li>

@@ -8,7 +8,7 @@ REFS = {
                 'https://pubmed.ncbi.nlm.nih.gov/34832885/'),
     'naik': ('Naik V, et al. The impact of polydeoxyribonucleotide on wound healing: a systematic review. International Surgery Journal. 2025;12(4):568-574.',
              'https://doi.org/10.18203/2349-2902.isj20250816'),
-    'park': ('Park GY, Jang BC. Polydeoxyribonucleotide as a regenerative agent in dermatology and wound healing: mechanisms, clinical applications, and safety. Keimyung Med J. 2025;44(1).',
+    'park': ('Park GY, Jang BC. Polydeoxyribonucleotide as a regenerative agent in dermatology and wound healing: mechanisms, clinical applications, and safety. Keimyung Med J. 2025;44(1). doi:10.46308/kmj.2025.00115',
              'https://kumel.medlib.dsmc.or.kr/handle/2015.oak/46110'),
 }
 
@@ -17,7 +17,7 @@ dict(slug='what-is-pdrn', short='What is PDRN?',
      title='What is <em>PDRN</em>? The "salmon DNA" skincare ingredient, explained',
      seo='What Is PDRN? Salmon DNA Skincare Explained (India)',
      desc='What is PDRN in skincare? How the "salmon DNA" ingredient works, what research shows, plant and banana PDRN, and what to expect from a PDRN serum.',
-     dek='PDRN is the ingredient behind the biggest K-beauty trend of 2026. Here is what it actually is, where it comes from and what it can realistically do for your skin.',
+     dek='PDRN is the ingredient behind one of the biggest K-beauty trends of 2026. Here is what it actually is, where it comes from and what it can realistically do for your skin.',
      answer='PDRN (polydeoxyribonucleotide) is a mix of small DNA fragments, traditionally purified from salmon or trout. In clinics it is injected to support skin repair. In serums and creams it is used for hydrated, plumper-looking, calmer skin. Topical results are gentler than injections.',
      refs=['galeano', 'park'],
      products=[1, 2, 14],
@@ -52,7 +52,7 @@ dict(slug='what-is-pdrn', short='What is PDRN?',
 <li>Everyone should patch test a new product. See <a href="/guides/is-pdrn-safe/">is PDRN safe?</a></li></ul>''',
      faq=[('Is PDRN really made from salmon sperm?', 'Traditional PDRN is purified from the DNA of salmon or trout sperm cells. Plant-based versions, such as MUMUKI\'s banana BDRN, are made from plant sources instead.'),
           ('Does PDRN change your DNA?', 'No. PDRN fragments are used as a signal for skin cells; they do not insert genetic information into your skin.'),
-          ('How long does a PDRN serum take to work?', 'Hydration and comfort can feel better within days to two weeks. A plumper, smoother look usually needs 4 to 8 weeks of regular use.'),
+          ('How long does a PDRN serum take to work?', 'Hydration and comfort can feel better within days to two weeks. If you see a plumper, smoother look, it usually takes 4 to 8 weeks of regular use.'),
           ('Is PDRN good for oily skin?', 'Yes, in light textures such as serums, ampoules and mists. Pair it with a gel moisturiser in humid weather.')]),
 
 dict(slug='plant-pdrn-vs-salmon-pdrn', short='Plant PDRN vs salmon PDRN',
@@ -68,29 +68,29 @@ dict(slug='plant-pdrn-vs-salmon-pdrn', short='Plant PDRN vs salmon PDRN',
 <div class="tbl"><table><thead><tr><th></th><th>Salmon PDRN</th><th>Plant PDRN (e.g. banana BDRN)</th></tr></thead><tbody>
 <tr><td>Source</td><td>Purified DNA from salmon or trout</td><td>DNA-based ingredients from plant cells</td></tr>
 <tr><td>Research</td><td>Larger body of work, mostly injections and wound healing</td><td>Early, mostly lab and brand studies</td></tr>
-<tr><td>Fish allergy</td><td>Avoid or ask a doctor</td><td>No fish source</td></tr>
-<tr><td>Vegetarian preference</td><td>No</td><td>Yes, plant-sourced</td></tr>
+<tr><td>Fish allergy</td><td>Avoid or ask a doctor</td><td>The PDRN itself has no fish source, but check the full formula</td></tr>
+<tr><td>Vegetarian preference</td><td>No</td><td>The PDRN is plant-sourced; other ingredients may not be</td></tr>
 <tr><td>Typical use</td><td>Clinic injections, serums, creams</td><td>Serums, creams, masks</td></tr>
 </tbody></table></div>
 
 <h2>Why salmon PDRN has more evidence</h2>
-<p>PDRN was first developed from fish DNA for medical use, so most published studies, including the reviews on wound healing and skin repair, are about salmon or trout PDRN, usually injected (<a href="https://pubmed.ncbi.nlm.nih.gov/34832885/" rel="noopener">Galeano et al., 2021</a>). Plant versions are newer. Lab work suggests some act on the same skin-cell receptor, but there are far fewer studies on people.</p>
+<p>PDRN was first developed from fish DNA for medical use, so most published studies, including the reviews on wound healing and skin repair, are about salmon or trout PDRN, usually injected (<a href="https://pubmed.ncbi.nlm.nih.gov/34832885/" rel="noopener">Galeano et al., 2021</a>). Plant versions are newer. In cell studies, some plant PDRN, such as one made from ginseng, acted on the same skin-cell receptor (<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10649580/" rel="noopener">Molecules, 2023</a>), but there is little or no research on people, and none we know of on banana PDRN.</p>
 
 <h2>Why many people still choose plant PDRN</h2>
-<ul><li><b>Vegetarian and fish-free:</b> important for many Indian families.</li>
-<li><b>Fish allergy:</b> no fish source to worry about.</li>
+<ul><li><b>Vegetarian preference:</b> the PDRN itself comes from plants, which matters to many Indian families. Other ingredients in the same product may still be animal-derived.</li>
+<li><b>Fish allergy:</b> no fish source in the PDRN itself; always check the full ingredient list.</li>
 <li><b>Texture and formula:</b> the overall formula (hyaluronic acid, ceramides, collagen, panthenol) matters as much as the PDRN source for hydration and comfort.</li></ul>
 
 <h2>What MUMUKI's BDRN is</h2>
 <p>MUMUKI calls its ingredient <b>BDRN</b>: a PDRN-type ingredient from Jeju bananas. The brand describes it as 99% banana-derived and says that in its own tests it absorbed faster and deeper than its salmon-PDRN ampoule. That is the brand's own test, not an independent study, so we present it as such.</p>
-<p>In MUMUKI products, BDRN is paired with Manuka honey, hydrolysed collagen, multi-layer hyaluronic acid, panthenol and ceramide capsules. That combination is built for hydration, a plumper look and glow, which is what most people want from a PDRN product.</p>
+<p>In MUMUKI products, BDRN is paired with Manuka honey, hydrolysed collagen, multi-layer hyaluronic acid, panthenol and ceramide capsules. That combination is built for hydration, a plumper look and glow, which is what most people want from a PDRN product. Some MUMUKI products also contain hydrolysed collagen, whose source the brand does not state, so if you have a fish allergy or are vegetarian, check the ingredient list and message us before buying.</p>
 
 <h2>How to choose</h2>
 <ul><li>Want the ingredient with the longest research history and have no fish allergy? Salmon PDRN.</li>
-<li>Prefer vegetarian or fish-free skincare, or have a fish allergy? Plant PDRN.</li>
+<li>Prefer vegetarian or fish-free skincare, or have a fish allergy? Plant PDRN, but check every ingredient, not just the PDRN.</li>
 <li>Either way: check the full ingredient list, patch test, and judge results after 4 to 8 weeks, not 4 days.</li></ul>''',
      faq=[('Is plant PDRN real PDRN?', 'Some dermatologists use "PDRN" only for purified fish DNA and call plant versions PDRN-inspired ingredients. Brands use the name for both. What matters for you is the full formula and how your skin tolerates it.'),
-          ('Is banana PDRN vegan?', 'MUMUKI\'s BDRN is banana-derived, so it has no fish source. Check each product\'s full ingredient list for other ingredients, such as honey or collagen, if you follow a strict vegan routine.'),
+          ('Is banana PDRN vegan?', 'MUMUKI says its BDRN is banana-derived. Some MUMUKI products also contain honey and hydrolysed collagen, whose source is not stated, so they are not suitable for a strict vegan routine. Message us if you need to check a product.'),
           ('Is plant PDRN better for sensitive skin?', 'Not automatically. Sensitive skin reacts to the whole formula. Fragrance-free products and a patch test matter more than the PDRN source.')]),
 
 dict(slug='pdrn-benefits-for-skin', short='PDRN benefits for skin',
@@ -98,7 +98,7 @@ dict(slug='pdrn-benefits-for-skin', short='PDRN benefits for skin',
      seo='PDRN Benefits for Skin: What a PDRN Serum Can Do',
      desc='PDRN benefits for skin explained: hydration, a plumper look, calmer skin and glow. What research supports, what is hype, and how long results take.',
      dek='PDRN is sold as a "repair" ingredient. Here is what it can realistically do in a serum or cream, and where the evidence ends.',
-     answer='In serums and creams, PDRN is used for more hydrated, plumper-looking, calmer and glowier skin. Research on injected PDRN shows support for skin repair; topical results are gentler. Expect visible changes over 4 to 8 weeks of regular use, alongside sunscreen.',
+     answer='In serums and creams, PDRN is used for more hydrated, plumper-looking, calmer and glowier skin. Research on injected PDRN shows support for skin repair; topical results are gentler. Any visible change usually takes 4 to 8 weeks of regular use, alongside sunscreen.',
      refs=['galeano', 'naik', 'park'],
      products=[1, 2, 3],
      related=['how-to-use-pdrn-serum', 'pdrn-serum-vs-pdrn-injection', 'what-is-pdrn'],
@@ -110,10 +110,10 @@ dict(slug='pdrn-benefits-for-skin', short='PDRN benefits for skin',
 <tr><td>Glow and smoother texture</td><td>The "glass skin" look</td><td>2 to 6 weeks</td></tr>
 <tr><td>Firmer-looking skin</td><td>Skin looks bouncier</td><td>8 weeks or more, modest</td></tr>
 </tbody></table></div>
-<p>Results vary by skin, product and routine. Sunscreen every morning matters more than any single ingredient.</p>
+<p>These timings are typical for hydrating skincare in general, not figures from PDRN studies. Results vary by skin, product and routine. Sunscreen every morning matters more than any single ingredient.</p>
 
 <h2>What the research actually says</h2>
-<p>Reviews of PDRN describe it activating the adenosine A2A receptor on skin cells, supporting new blood vessel growth, collagen-making cells and calmer inflammation, mostly in wound healing (<a href="https://pubmed.ncbi.nlm.nih.gov/34832885/" rel="noopener">Galeano et al., 2021</a>; <a href="https://doi.org/10.18203/2349-2902.isj20250816" rel="noopener">Naik et al., 2025</a>). A 2025 review also reports a very good safety record across trials (<a href="https://kumel.medlib.dsmc.or.kr/handle/2015.oak/46110" rel="noopener">Park &amp; Jang, 2025</a>).</p>
+<p>Reviews of PDRN describe it activating the adenosine A2A receptor on skin cells, supporting new blood vessel growth, collagen-making cells and calmer inflammation, mostly in wound-healing studies, many of them in the lab or in animals (<a href="https://pubmed.ncbi.nlm.nih.gov/34832885/" rel="noopener">Galeano et al., 2021</a>; <a href="https://doi.org/10.18203/2349-2902.isj20250816" rel="noopener">Naik et al., 2025</a>). A 2025 review reports few side effects in medical studies of salmon PDRN (<a href="https://kumel.medlib.dsmc.or.kr/handle/2015.oak/46110" rel="noopener">Park &amp; Jang, 2025</a>).</p>
 <p>Most of that research uses <b>injected</b> PDRN. On the skin surface, large DNA fragments do not travel as deep, so serums and creams give gentler results. That is why a good PDRN product also contains proven hydrators such as hyaluronic acid, panthenol and ceramides.</p>
 
 <h2>Who benefits most</h2>
@@ -209,7 +209,7 @@ dict(slug='pdrn-serum-vs-pdrn-injection', short='PDRN serum vs injection',
 </tbody></table></div>
 
 <h2>Why injections show bigger effects</h2>
-<p>PDRN is made of fairly large DNA fragments. Injected, they reach the deeper skin where repair happens. That is the setting for most of the research on wound healing and skin repair (<a href="https://pubmed.ncbi.nlm.nih.gov/34832885/" rel="noopener">Galeano et al., 2021</a>). On the skin surface, much less reaches that deep, so serums are better thought of as excellent hydrating and soothing skincare, not a bottled injection.</p>
+<p>PDRN is made of fairly large DNA fragments. Injected, they reach the deeper skin where repair happens. That is the setting for most of the research on wound healing and skin repair (<a href="https://pubmed.ncbi.nlm.nih.gov/34832885/" rel="noopener">Galeano et al., 2021</a>). Large fragments are unlikely to reach that deep from the skin surface, and topical studies are limited, so serums are better thought of as excellent hydrating and soothing skincare, not a bottled injection.</p>
 
 <h2>Safety</h2>
 <p>A 2025 review reports very few side effects with PDRN in medical use (<a href="https://kumel.medlib.dsmc.or.kr/handle/2015.oak/46110" rel="noopener">Park &amp; Jang, 2025</a>). Injections still carry the usual needle risks, and must only be done by a qualified doctor in a proper clinic, never at a salon. People with a fish allergy, who are pregnant or breastfeeding, or who have an active skin infection should not have salmon PDRN injections without a doctor's advice.</p>
@@ -226,26 +226,26 @@ dict(slug='is-pdrn-safe', short='Is PDRN safe?',
      title='Is PDRN safe? <em>Side effects and who should avoid it</em>',
      seo='Is PDRN Safe? Side Effects, Fish Allergy and Pregnancy',
      desc='Is PDRN safe for skin? Side effects of PDRN serums and injections, fish allergy, pregnancy, sensitive skin, and how to patch test, explained simply.',
-     dek='PDRN has one of the gentler safety records among popular actives. Here is who should still be careful, and how to start safely.',
-     answer='PDRN is generally well tolerated. In serums and creams, reactions are uncommon and usually come from other ingredients. Avoid salmon PDRN if you have a fish allergy, ask a doctor in pregnancy or breastfeeding, and patch test any new product for 24 to 48 hours.',
+     dek='PDRN is generally well tolerated in medical studies. Here is who should still be careful, and how to start safely.',
+     answer='PDRN is generally well tolerated. In serums and creams, reactions, when they happen, often come from other ingredients such as fragrance or retinol. Avoid salmon PDRN if you have a fish allergy, ask a doctor in pregnancy or breastfeeding, and patch test any new product for 24 to 48 hours.',
      refs=['park', 'galeano'],
      products=[2, 3, 1],
      related=['what-is-pdrn', 'plant-pdrn-vs-salmon-pdrn', 'how-to-use-pdrn-serum'],
      body='''<h2>How safe is PDRN?</h2>
-<p>Reviews of PDRN in medical use report very few adverse events across trials and real-world use (<a href="https://kumel.medlib.dsmc.or.kr/handle/2015.oak/46110" rel="noopener">Park &amp; Jang, 2025</a>; <a href="https://pubmed.ncbi.nlm.nih.gov/34832885/" rel="noopener">Galeano et al., 2021</a>). In skincare, PDRN is usually one of the gentlest ingredients in the bottle.</p>
+<p>Reviews of PDRN in medical use report very few adverse events across trials and real-world use (<a href="https://kumel.medlib.dsmc.or.kr/handle/2015.oak/46110" rel="noopener">Park &amp; Jang, 2025</a>; <a href="https://pubmed.ncbi.nlm.nih.gov/34832885/" rel="noopener">Galeano et al., 2021</a>).</p>
 
 <h2>Possible side effects</h2>
-<div class="tbl"><table><thead><tr><th>Reaction</th><th>How common</th><th>What to do</th></tr></thead><tbody>
-<tr><td>Mild stinging or warmth</td><td>Uncommon</td><td>Apply on fully dry skin; use less often</td></tr>
-<tr><td>Small bumps or breakouts</td><td>Uncommon, often from a rich texture</td><td>Use a lighter texture; check the moisturiser too</td></tr>
-<tr><td>Redness, itching, rash</td><td>Rare</td><td>Stop and rinse; see a doctor if it does not settle</td></tr>
-<tr><td>Swelling of face, lips or eyes</td><td>Very rare</td><td>Stop and get medical help at once</td></tr>
-<tr><td>Injection only: redness, swelling, bruising</td><td>Common for a few days</td><td>Follow your clinic's aftercare</td></tr>
+<div class="tbl"><table><thead><tr><th>Reaction</th><th>Often linked to</th><th>What to do</th></tr></thead><tbody>
+<tr><td>Mild stinging or warmth</td><td>Applying on damp skin, or retinol and acids in the formula</td><td>Apply on fully dry skin; use less often</td></tr>
+<tr><td>Small bumps or breakouts</td><td>A texture too rich for your skin</td><td>Use a lighter texture; check the moisturiser too</td></tr>
+<tr><td>Redness, itching, rash</td><td>Irritation or allergy to an ingredient</td><td>Stop and rinse; see a doctor if it does not settle</td></tr>
+<tr><td>Swelling of face, lips or eyes</td><td>Allergic reaction</td><td>Stop and get medical help at once</td></tr>
+<tr><td>Injection only: redness, swelling, bruising</td><td>The injection itself; usually lasts a few days</td><td>Follow your clinic's aftercare</td></tr>
 </tbody></table></div>
 
 <h2>Who should be careful</h2>
-<ul><li><b>Fish allergy:</b> avoid salmon-derived PDRN, or ask a doctor. Plant versions have no fish source.</li>
-<li><b>Pregnancy and breastfeeding:</b> there is little safety data. Ask your doctor before starting.</li>
+<ul><li><b>Fish allergy:</b> avoid salmon-derived PDRN, or ask a doctor. With plant PDRN, still check the full ingredient list for fish-derived ingredients such as collagen.</li>
+<li><b>Pregnancy and breastfeeding:</b> there is little safety data on PDRN, and some MUMUKI products list retinol. Ask your doctor before starting.</li>
 <li><b>Active skin infection, open wounds or eczema flares:</b> wait until the skin has healed.</li>
 <li><b>Very sensitive skin:</b> choose fragrance-free products and patch test first.</li>
 <li><b>Injections:</b> only from a qualified doctor, never a salon.</li></ul>
@@ -256,10 +256,10 @@ dict(slug='is-pdrn-safe', short='Is PDRN safe?',
 <li>No redness, itching or swelling? Start on the face once a day.</li></ol>
 
 <h2>Reading the label</h2>
-<p>Check the full ingredient list, the importer or maker's name and address, batch number and expiry. Many reactions come from fragrance or other actives, not PDRN. MUMUKI's Honey Banana skincare is fragrance-free, and the Ampoule Mask and Hydrogel Mask also contain retinol, so start those slowly if your skin is sensitive. See <a href="/genuine-mumuki-india/">how to buy genuine MUMUKI in India</a>.</p>''',
+<p>Check the full ingredient list, the importer or maker's name and address, batch number and expiry. Many reactions come from fragrance or other actives, not PDRN. MUMUKI's Honey Banana skincare is fragrance-free. Several MUMUKI products, including the masks, list retinol among their ingredients, so check the pack and start slowly if your skin is sensitive. See <a href="/genuine-mumuki-india/">how to buy genuine MUMUKI in India</a>.</p>''',
      faq=[('Is PDRN safe for sensitive skin?', 'Usually, yes. Choose fragrance-free formulas, patch test, and add one new product at a time.'),
           ('Can I use PDRN during pregnancy?', 'There is little safety data on PDRN in pregnancy. Ask your doctor before using it.'),
-          ('Is PDRN vegetarian?', 'Salmon PDRN comes from fish. Plant versions, such as banana BDRN, have no animal DNA source. Check each product\'s full ingredient list for other ingredients.')]),
+          ('Is PDRN vegetarian?', 'Salmon PDRN comes from fish. Plant PDRN, such as MUMUKI\'s banana BDRN, is plant-sourced, but other ingredients in the same product, such as collagen, may be animal-derived. Check the full ingredient list.')]),
 
 dict(slug='pdrn-for-indian-skin', short='PDRN for Indian skin',
      title='PDRN for Indian skin: <em>heat, humidity and oily skin</em>',
@@ -275,7 +275,7 @@ dict(slug='pdrn-for-indian-skin', short='PDRN for Indian skin',
 
 <h2>By skin type</h2>
 <div class="tbl"><table><thead><tr><th>Skin type</th><th>Best PDRN format</th><th>Tip</th></tr></thead><tbody>
-<tr><td>Oily or acne-prone</td><td>Ampoule or serum, plus a mist</td><td>Finish with a light gel moisturiser; skip heavy creams in summer</td></tr>
+<tr><td>Oily or acne-prone</td><td>Ampoule or serum; a mist over sunscreen if skin feels dry</td><td>Finish with a light gel moisturiser; skip heavy creams in summer</td></tr>
 <tr><td>Combination</td><td>Ampoule all over, cream only on dry areas</td><td>Use less product on the T-zone</td></tr>
 <tr><td>Dry</td><td>Ampoule plus a ceramide cream</td><td>Add a mask 2 to 3 times a week in winter</td></tr>
 <tr><td>Sensitive</td><td>Fragrance-free cream or mist</td><td>Patch test; add one product at a time</td></tr>
@@ -305,15 +305,14 @@ dict(slug='pdrn-serum-price-in-india', short='PDRN serum price in India',
      seo='PDRN Serum Price in India (2026): What Is Worth Paying',
      desc='PDRN serum price in India in 2026: typical ranges for Indian and imported Korean PDRN serums, why prices differ, and how to avoid fakes and overpaying.',
      dek='PDRN serums in India range from a few hundred rupees to several thousand. Here is what drives the price, and how to know what you are paying for.',
-     answer='In India, PDRN serums from Indian brands mostly cost around ₹550 to ₹1,000 for 30 ml. Imported Korean PDRN serums, ampoules and creams usually cost about ₹1,200 to ₹2,000 or more. The price reflects the full formula, the import, and the seller, not just the PDRN.',
+     answer='In India, PDRN serums from Indian brands mostly cost around ₹550 to ₹1,000 for 30 ml. Imported Korean PDRN serums, ampoules and creams usually cost about ₹1,200 to ₹3,000. The price reflects the full formula, the import, and the seller, not just the PDRN.',
      refs=[],
      products=[1, 2, 9],
      related=['genuine-mumuki', 'what-is-pdrn', 'plant-pdrn-vs-salmon-pdrn'],
      body='''<h2>Typical PDRN prices in India (2026)</h2>
 <div class="tbl"><table><thead><tr><th>Type</th><th>Typical price</th><th>Notes</th></tr></thead><tbody>
 <tr><td>Indian-brand PDRN serum, 30 ml</td><td>About ₹550 to ₹1,000</td><td>Often PDRN plus niacinamide, peptides or collagen</td></tr>
-<tr><td>Small or trial sizes (10 to 15 ml)</td><td>About ₹500 to ₹700</td><td>Good for testing your skin's response</td></tr>
-<tr><td>Imported Korean PDRN serum or ampoule</td><td>About ₹1,200 to ₹2,000+</td><td>Import, duties and Korean formulations add cost</td></tr>
+<tr><td>Imported Korean PDRN serum or ampoule</td><td>About ₹1,200 to ₹3,000</td><td>Import, duties and Korean formulations add cost</td></tr>
 <tr><td>Korean PDRN creams and sets</td><td>About ₹1,500 to ₹4,500+</td><td>Sets bundle 2 to 3 steps</td></tr>
 <tr><td>PDRN injections at a clinic</td><td>Much higher, per session</td><td>A medical treatment, not skincare</td></tr>
 </tbody></table></div>
@@ -328,7 +327,7 @@ dict(slug='pdrn-serum-price-in-india', short='PDRN serum price in India',
 <h2>How to avoid overpaying or buying fakes</h2>
 <ul><li>Check for an <b>Indian importer label</b> with name, address, batch number, MRP and expiry.</li>
 <li>Be wary of prices far below the usual range on marketplaces.</li>
-<li>Buy from the brand's authorised seller in India and ask for a GST invoice.</li>
+<li>Buy from a seller who imports officially into India and gives a GST invoice.</li>
 <li>Avoid "ship from abroad" offers that cannot handle returns in India.</li></ul>
 <p>More in <a href="/genuine-mumuki-india/">how to buy genuine MUMUKI in India</a>.</p>
 
@@ -386,14 +385,14 @@ dict(slug='how-to-use-korean-face-masks', short='How to use Korean face masks',
      seo='How to Use Sheet, Hydrogel and Bubble Masks Correctly',
      desc='How to use Korean sheet masks, hydrogel masks and bubble masks: how long to leave them on, how often, what to do after, and common mistakes.',
      dek='Masks are the easiest way to give skin a quick hydration boost. Here is how to use each type properly, and how often.',
-     answer='Use a sheet mask for 10 to 20 minutes on clean, toned skin, then pat in the leftover essence and seal with a moisturiser. Hydrogel masks stay on longer and can be worn overnight. Leave-on bubble masks go on after cleansing and absorb in seconds. Most people mask 2 to 3 times a week.',
+     answer='Use a sheet mask for 10 to 20 minutes on clean, toned skin, then pat in the leftover essence and seal with a moisturiser. Hydrogel masks are worn as the pack directs; some, like MUMUKI\'s, are made for longer or overnight wear. Leave-on bubble masks go on after cleansing and absorb in seconds. Most people mask 2 to 3 times a week.',
      refs=[],
      products=[4, 13, 14],
      related=['korean-glass-skin-routine-india', 'how-to-use-pdrn-serum', 'pdrn-for-indian-skin'],
      body='''<h2>The three mask types</h2>
 <div class="tbl"><table><thead><tr><th>Type</th><th>What it is</th><th>How long</th><th>How often</th></tr></thead><tbody>
 <tr><td>Sheet mask</td><td>Fabric soaked in essence</td><td>10 to 20 minutes</td><td>2 to 3 times a week</td></tr>
-<tr><td>Hydrogel mask</td><td>Gel sheet that hugs the face</td><td>From about an hour, or overnight</td><td>2 to 3 times a week</td></tr>
+<tr><td>Hydrogel mask</td><td>Gel sheet that hugs the face</td><td>As directed on the pack (often 20 to 30 minutes; some, like MUMUKI's, are made for longer or overnight wear)</td><td>2 to 3 times a week</td></tr>
 <tr><td>Bubble mask (leave-on)</td><td>A foam that melts into skin</td><td>About 30 seconds to absorb</td><td>As a daily prep step</td></tr>
 </tbody></table></div>
 
@@ -408,7 +407,7 @@ dict(slug='how-to-use-korean-face-masks', short='How to use Korean face masks',
 <h2>How to use a hydrogel mask</h2>
 <ol><li>Cleanse and tone.</li>
 <li>Apply the two pieces (top and bottom) smoothly.</li>
-<li>Leave it on until it turns transparent, or wear it overnight as the last step.</li>
+<li>Leave it on for the time on the pack. MUMUKI's is made to be worn until it turns transparent, or overnight as the last step.</li>
 <li>Remove and pat in any remaining essence.</li></ol>
 <p>The brand says MUMUKI's <a href="/products/honey-banana-bdrn-hydrogel-mask/">Hydrogel Mask</a> starts turning transparent after about 40 to 50 minutes and recommends around 3 hours of wear.</p>
 
@@ -440,13 +439,13 @@ GENUINE = dict(slug='genuine-mumuki-india', short='Genuine MUMUKI in India',
      seo='Genuine MUMUKI in India: How to Spot Original Products',
      desc='How to buy genuine MUMUKI Honey Banana PDRN skincare in India: the importer label, batch and expiry checks, warning signs of fakes, and who sells MUMUKI here.',
      dek='Popular K-beauty products are often copied or sold past their best. Here is how to know your MUMUKI is the real thing.',
-     answer='Genuine MUMUKI sold in India carries an Indian importer label with the importer\'s name and address, batch number, MRP and expiry date. MUMUKI India is imported and marketed by Beauty Mart Pvt Ltd, Bhatkal, Karnataka. Buy from us or a seller we authorise, and ask for a GST invoice.',
+     answer='Genuine MUMUKI sold in India carries an Indian importer label with the importer\'s name and address, batch number, MRP and expiry date. MUMUKI products in India are imported and marketed by Beauty Mart Pvt Ltd, Bhatkal, Karnataka. Buy directly from MUMUKI India and ask for a GST invoice.',
      body='''<h2>Who sells MUMUKI in India</h2>
 <p>MUMUKI India (www.mumuki.in) is run by <b>Beauty Mart Pvt Ltd</b>, Azad Nagar 4th Cross, Bhatkal, Uttara Kannada, Karnataka 581320. We import MUMUKI Honey Banana PDRN skincare from Korea and ship it from within India, so there are no surprise customs charges at your door.</p>
 
 <h2>Check these on every pack</h2>
 <div class="tbl"><table><thead><tr><th>Check</th><th>What to look for</th></tr></thead><tbody>
-<tr><td>Indian importer label</td><td>Importer name and full address in India</td></tr>
+<tr><td>Indian importer label</td><td>Importer name and full address in India, and the import registration details where printed</td></tr>
 <tr><td>Batch number</td><td>Printed clearly, matching the box and the bottle or pouch</td></tr>
 <tr><td>Manufacturing and expiry dates</td><td>Clearly printed and not expired</td></tr>
 <tr><td>MRP</td><td>Printed on the label, inclusive of taxes</td></tr>
@@ -463,7 +462,7 @@ GENUINE = dict(slug='genuine-mumuki-india', short='Genuine MUMUKI in India',
 <li>"Shipped from abroad" listings with long, untracked delivery times.</li></ul>
 
 <h2>If you are unsure</h2>
-<p>Send us a clear photo of the box, the label and the batch number on WhatsApp at +91 99808 81230. We will tell you whether it came through MUMUKI India. If a product you bought from us arrives damaged or wrong, share an unboxing video within 48 hours and we will replace it, as described in our <a href="/returns.html">returns policy</a>.</p>
+<p>Send us a clear photo of the box, the label and the batch number on WhatsApp at +91 99808 81230, and we will check the label and batch details against our stock. If a product you bought from us arrives damaged or wrong, share an unboxing video or clear photos within 48 hours and we will replace it or refund you, as described in our <a href="/returns.html">returns policy</a>.</p>
 
 <h2>Reviews</h2>
 <p>MUMUKI's Honey Banana line has customer reviews on the brand's official store. Reviews from our customers in India will appear on our product pages after launch. We do not post made-up reviews.</p>''',

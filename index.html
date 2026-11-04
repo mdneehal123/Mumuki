@@ -691,7 +691,7 @@ const SHARED_VIDEOS = ["images/bdrn-mist-video.mp4" /* add the 2nd video here, e
 
 /* ====== PRODUCTS — set your own ₹ prices; swap in real photos via `img` ====== */
 const products = [
-  {id:1, ext:{n:19,url:"https://trymumuki.com/products/mumuki-honey-banana-pdrn-anti-aging-serum-plant-pdrn-bdrn-capsule-ampoule-with-collagen-ceramide-plumping-firming-korean-skincare-for-dewy-glowing-skin-1-01-fl-oz"}, feats:["ANTI-AGING","FIRM GLOW","BOOST ELASTICITY"], img:"images/bdrn-ampoule.jpg", gallery:[1,2,3,4,5,6,7,8,9].map(n=>`images/bdrn-ampoule-${n}.jpg`),
+  {id:1, ext:{n:19,url:"https://trymumuki.com/products/mumuki-honey-banana-pdrn-anti-aging-serum-plant-pdrn-bdrn-capsule-ampoule-with-collagen-ceramide-plumping-firming-korean-skincare-for-dewy-glowing-skin-1-01-fl-oz"}, feats:["FIRMER-LOOKING","GLOW","BOUNCY LOOK"], img:"images/bdrn-ampoule.jpg", gallery:[1,2,3,4,5,6,7,8,9].map(n=>`images/bdrn-ampoule-${n}.jpg`),
    tags:["Firming","Plumping","Glass glow","Fragrance-free","Sensitive-skin friendly"],
    highlights:[
      ["🍌 Banana-derived PDRN (BDRN)","99% banana-derived PDRN from Jeju bananas. In the brand's tests it absorbed faster and deeper than their salmon-PDRN ampoule."],
@@ -713,7 +713,7 @@ const products = [
    ],
    howto:"Take an appropriate amount, spread evenly over face and neck, and gently massage until absorbed. It sinks in quickly, so it works under makeup in the morning and as an intensive moisturiser at night. Use as the last step after the BDRN Ampoule.",
    cat:"honey", line:"Honey Banana BDRN", name:"Honey Banana PDRN Capsule Cream", desc:"Rich but non-greasy ceramide-capsule cream with BDRN & collagen for firm, plump, glowing skin.", price:1799, mrp:2399, shape:"jar", label:"CREAM"},
-  {id:3, ext:{n:15,url:"https://trymumuki.com/"}, img:"images/bdrn-mist.jpg", gallery:[1,2,3,4,5,6,7,8,9].map(n=>`images/bdrn-mist-${n}.jpg`),
+  {id:3, ext:{n:null,url:"https://trymumuki.com/"}, img:"images/bdrn-mist.jpg", gallery:[1,2,3,4,5,6,7,8,9].map(n=>`images/bdrn-mist-${n}.jpg`),
    tags:["Firming","Plumping","Hydration","24-hour glow","Fragrance-free","Sensitive-skin friendly"],
    highlights:[
      ["🫧 Double-layer formula","A glow-oil layer forms a moisture barrier, and a moisture-cream layer hydrates and nourishes. Shake to mix."],
@@ -724,7 +724,7 @@ const products = [
    ],
    howto:"Shake 3–5 times to mix the two layers. Spray evenly from about 20 cm away from your face, then gently pat in. Use after cleansing, before or after makeup, or any time your skin feels dry. Great for AC offices and long Indian summer days.",
    cat:"honey", line:"Honey Banana BDRN", name:"Honey Banana PDRN Cream Mist", desc:"Double-layer cream mist with BDRN & milk extract for 24-hour hydration and a seamless glow, before or after makeup.", price:1299, mrp:1599, shape:"", label:"MIST"},
-  {id:4, ext:{n:19,url:"https://trymumuki.com/"}, img:"images/bdrn-mask.jpg", gallery:[1,2,3,4,5,6,7,8,9].map(n=>`images/bdrn-mask-${n}.jpg`),
+  {id:4, ext:{n:null,url:"https://trymumuki.com/"}, img:"images/bdrn-mask.jpg", gallery:[1,2,3,4,5,6,7,8,9].map(n=>`images/bdrn-mask-${n}.jpg`),
    tags:["Firming","Plumping","Glass glow","Fragrance-free","Non-comedogenic","Tested on sensitive skin"],
    highlights:[
      ["🎭 Hyaluronic smart-pattern sheet","A visible hyaluronic layer on the sheet fades as the formula absorbs into your skin, so you can see it working."],
@@ -734,19 +734,19 @@ const products = [
      ["💧 Hyaluronic acid + panthenol + Manuka honey","Deep, nourishing hydration with a smooth, soothed finish."]
    ],
    howto:"After cleansing, prep skin with toner. Apply the mask evenly to fit your face and leave on for 10–20 minutes. Remove the sheet and gently pat the remaining ampoule into skin. Tip: seal it in with the BDRN Capsule Cream for plumper, bouncier skin. Perfect before a wedding, party or photoshoot.",
-   cat:"honey", line:"Honey Banana BDRN", name:"Honey Banana PDRN Ampoule Mask", desc:"5 × 25ml sheet masks with BDRN, collagen & centella. A smart-pattern sheet for instant firm, plump, glass-glow skin.", price:999, mrp:1299, badge:"New", shape:"flat", label:"MASK"},
+   cat:"honey", line:"Honey Banana BDRN", name:"Honey Banana PDRN Ampoule Mask", desc:"5 × 25ml sheet masks with BDRN, collagen & centella. A smart-pattern sheet for an instantly plumper, dewier look.", price:999, mrp:1299, badge:"New", shape:"flat", label:"MASK"},
   {id:13, img:"images/bdrn-hydrogel.jpg", gallery:[1,2,3,4,5,6,7,8,9].map(n=>`images/bdrn-hydrogel-${n}.jpg`),
    tags:["Firming","Plumping","Glass glow","Overnight","Fragrance-free","Non-comedogenic"],
    highlights:[
-     ["🌙 Overnight hydrogel mask","Turns transparent as it absorbs, recharging deep moisture and refining tone while you sleep for glass skin by morning."],
+     ["🌙 Overnight hydrogel mask","Turns transparent as it absorbs; designed for a dewy, glowing look in the morning."],
      ["🍌 5,000 ppm BDRN complex","Banana-derived PDRN from Jeju bananas for fast absorption and firmer-looking skin."],
      ["✨ Hydrolyzed collagen + retinol","Support skin elasticity."],
      ["🌿 20,000 ppm centella asiatica","Supports the moisture barrier and calms skin."],
      ["💧 Hyaluronic acid + panthenol + Manuka honey","Deep, nourishing hydration with a smooth, soothed finish."]
    ],
    howto:"After cleansing, prep skin with toner. Take the two-piece mask out of the pouch and apply evenly to fit your face. It starts turning transparent after about 40–50 minutes; recommended wear is around 3 hours. Once transparent, remove it and pat in the remaining essence. As a sleeping mask, apply it as the final step of your night routine.",
-   cat:"honey", line:"Honey Banana BDRN", name:"Honey Banana BDRN Hydrogel Mask", badge:"New", desc:"5 × 36g overnight hydrogel masks with BDRN, collagen & centella. They turn transparent as they absorb, for glass skin by morning.", price:1499, mrp:1899, shape:"flat", label:"HYDROGEL"},
-  {id:14, ext:{n:19,url:"https://trymumuki.com/"}, feats:["GLASS SKIN","EXFOLIATING","SKIN BOOSTER"], img:"images/bdrn-bubble-mask.jpg", gallery:[1,2,3,4,5,6,7,8,9].map(n=>`images/bdrn-bubble-mask-${n}.jpg`),
+   cat:"honey", line:"Honey Banana BDRN", name:"Honey Banana BDRN Hydrogel Mask", badge:"New", desc:"5 × 36g overnight hydrogel masks with BDRN, collagen & centella. They turn transparent as they absorb, for a dewy, glowing look in the morning.", price:1499, mrp:1899, shape:"flat", label:"HYDROGEL"},
+  {id:14, ext:{n:null,url:"https://trymumuki.com/"}, feats:["GLASS SKIN","EXFOLIATING","PREP STEP"], img:"images/bdrn-bubble-mask.jpg", gallery:[1,2,3,4,5,6,7,8,9].map(n=>`images/bdrn-bubble-mask-${n}.jpg`),
    tags:["Firming","Plumping","Radiance","Gentle exfoliation","Fragrance-free","Sensitive-skin friendly"],
    highlights:[
      ["🫧 Melt-in bubble formula","Micro-bubbles melt into skin in about 5 seconds for hydration, glow and smoother texture. Gently exfoliating yet mild enough for daily use."],
@@ -764,11 +764,11 @@ const products = [
    ],
    howto:"After cleansing, pump the Bubble Mask 2–3 times, spread it evenly and let it absorb for about 30 seconds without rinsing. Then massage in the Capsule Ampoule with the dropper until fully absorbed. Finish with your moisturiser, or the Capsule Cream for the full 3-step routine.",
    cat:"set", line:"Sets", name:"Honey Banana PDRN Boosting Duo", desc:"Bubble Mask 150ml + Capsule Ampoule 30ml. Prep with micro-bubbles, then boost with BDRN for firm, plump glow.", price:2999, mrp:3798, shape:"", label:"DUO"},
-  {id:10, ext:{n:2,url:"https://trymumuki.com/products/mumuki-honey-banana-bdrn-3-step-skincare-set-bubble-mask-capsule-ampoule-cream-hydration-glow-elasticity-care-korean-skincare-set"}, feats:["3-STEP GLOW ROUTINE","ANTI-AGING","FIRM LIFTING"], img:"images/set-3step.jpg", gallery:[1,2,3,4,5,6,7,8,9].map(n=>`images/set-3step-${n}.jpg`),
+  {id:10, ext:{n:2,url:"https://trymumuki.com/products/mumuki-honey-banana-bdrn-3-step-skincare-set-bubble-mask-capsule-ampoule-cream-hydration-glow-elasticity-care-korean-skincare-set"}, feats:["3-STEP GLOW ROUTINE","FIRMER-LOOKING","BOUNCY LOOK"], img:"images/set-3step.jpg", gallery:[1,2,3,4,5,6,7,8,9].map(n=>`images/set-3step-${n}.jpg`),
    tags:["Glass glow","Plump, firm & elastic","Moisture-locking","Fragrance-free"],
    highlights:[
      ["Step 1 · Honey Banana PDRN Bubble Mask 150ml","Exfoliates gently and boosts absorption. Melts into skin in about 5 seconds."],
-     ["Step 2 · Honey Banana PDRN Capsule Ampoule 30ml","Firms and boosts elasticity with a stretchy, non-sticky formula."],
+     ["Step 2 · Honey Banana PDRN Capsule Ampoule 30ml","Brand says: for firmer, bouncier-looking skin, in a stretchy, non-sticky formula."],
      ["Step 3 · Honey Banana PDRN Capsule Cream 50ml","Locks in moisture and enhances radiance with ceramide capsules."],
      ["Plant-based, low-molecule PDRN","99% banana-derived PDRN from Jeju bananas with Manuka honey, for fast absorption."]
    ],
@@ -816,7 +816,7 @@ document.getElementById("waFloat").href = `https://wa.me/${WHATSAPP}?text=Hi%20M
 const recs = {
   dull:"<b>Begin with</b>  BDRN Capsule Ampoule + Ampoule Mask 2×/week. Honey and BDRN bring back bounce and glow.",
   dry:"<b>Begin with</b>  BDRN Capsule Duo (Ampoule + Cream). Ceramide capsules lock moisture in all day.",
-  red:"<b>Begin with</b>  Capsule Cream + Cream Mist. Both are fragrance-free and made for sensitive skin. Patch test first.",
+  red:"<b>Begin with</b>  Capsule Cream + Cream Mist. Both are fragrance-free. Patch test first, and check the ingredient list (some products contain retinol).",
   oily:"<b>Begin with</b>  BDRN Capsule Ampoule + Cream Mist. Lightweight hydration that won't feel heavy in humidity."
 };
 document.getElementById("opts").addEventListener("click", e => {
