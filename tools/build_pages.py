@@ -177,6 +177,13 @@ def write(path, content):
     open(full, 'w', encoding='utf-8').write(content)
 
 # ---------- product pages ----------
+VIDEOS = ['images/bdrn-mist-video.mp4', 'images/bdrn-mist-video-2.mp4']
+def videos_html():
+    vids = [v for v in VIDEOS if os.path.exists(os.path.join(ROOT, v))]
+    if not vids: return ''
+    cards = ''.join(f'<div class="reel"><video src="/{v}" poster="/{v[:-4]}-poster.jpg" autoplay muted loop playsinline preload="metadata"></video><button type="button" class="snd" aria-label="Sound">🔇</button></div>' for v in vids)
+    return f'<h2>See it in action</h2><div class="reels{" one" if len(vids) == 1 else ""}">{cards}</div>'
+
 def product_page(pid):
     p, m = P[pid], META[pid]
     path = purl(pid)
@@ -211,6 +218,7 @@ def product_page(pid):
       <span class="note">Ask for the current price and availability. Cash on delivery available on most pin codes. <a href="/#notify" style="border-bottom:1px solid currentColor">Join the launch list</a> for 10% off your first order.</span>
     </div>
     {ext_html}
+    {videos_html()}
     <h2>Key ingredients (as described by MUMUKI)</h2>
     <ul class="hl">{hl}</ul>
     <p class="note" style="font-size:12.5px;color:var(--muted)">Ingredient benefits, amounts and test results are the brand's own descriptions.</p>
@@ -233,6 +241,9 @@ def product_page(pid):
 {product_cards(m['pairs'])}
 {guide_cards(m['guides'])}
 <script>
+var vio=new IntersectionObserver(function(es){{es.forEach(function(e){{var v=e.target;if(e.isIntersecting){{v.muted=v.dataset.sound!=='on';var r=v.play();if(r&&r.catch)r.catch(function(){{}});}}else{{v.pause();}}}});}},{{threshold:.25}});
+document.querySelectorAll('.reel video').forEach(function(v){{v.muted=true;vio.observe(v);}});
+document.querySelectorAll('.reel .snd').forEach(function(b){{b.addEventListener('click',function(){{var v=b.previousElementSibling;v.muted=!v.muted;v.dataset.sound=v.muted?'off':'on';if(!v.muted)v.play();b.textContent=v.muted?'🔇':'🔊';}});}});
 document.querySelectorAll('#pThumbs button').forEach(function(b){{b.addEventListener('click',function(){{
   document.getElementById('pMain').src=b.dataset.src;document.querySelectorAll('#pThumbs button').forEach(function(x){{x.classList.toggle('on',x===b);}});}});}});
 </script>'''
