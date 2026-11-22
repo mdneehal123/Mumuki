@@ -441,7 +441,7 @@ GENUINE = dict(slug='genuine-mumuki-india', short='Genuine MUMUKI in India',
      dek='Popular K-beauty products are often copied or sold past their best. Here is how to know your MUMUKI is the real thing.',
      answer='Genuine MUMUKI sold in India carries an Indian importer label with the importer\'s name and address, batch number, MRP and expiry date. MUMUKI products in India are imported and marketed by Beauty Mart Pvt Ltd, Bhatkal, Karnataka. Buy directly from MUMUKI India and ask for a GST invoice.',
      body='''<h2>Who sells MUMUKI in India</h2>
-<p>MUMUKI India (www.mumuki.in) is run by <b>Beauty Mart Pvt Ltd</b>, Azad Nagar 4th Cross, Bhatkal, Uttara Kannada, Karnataka 581320. We import MUMUKI Honey Banana PDRN skincare from Korea and ship it from within India, so there are no surprise customs charges at your door.</p>
+<p>MUMUKI India (www.mumuki.in) is run by <b>Beauty Mart Pvt Ltd</b>, Bhatkal, Karnataka. We import MUMUKI Honey Banana PDRN skincare from Korea and ship it from within India, so there are no surprise customs charges at your door.</p>
 
 <h2>Check these on every pack</h2>
 <div class="tbl"><table><thead><tr><th>Check</th><th>What to look for</th></tr></thead><tbody>

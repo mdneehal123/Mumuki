@@ -141,7 +141,7 @@ def foot():
       <div><h5>Learn</h5><ul>{learn}<li><a href="/genuine-mumuki-india/">Genuine MUMUKI in India</a></li></ul></div>
       <div><h5>Help</h5><ul><li><a href="/#faq">FAQ</a></li><li><a href="/shipping.html">Shipping policy</a></li><li><a href="/returns.html">Returns &amp; refunds</a></li><li><a href="/terms.html">Terms &amp; conditions</a></li><li><a href="/privacy.html">Privacy policy</a></li><li><a href="https://wa.me/{WA}">WhatsApp +91 99808 81230</a></li><li>hello@mumuki.in</li></ul></div>
     </div>
-    <div class="legal">© 2026 mumuki.in · Imported &amp; marketed in India by Beauty Mart Pvt Ltd, Azad Nagar 4th Cross, Bhatkal, Uttara Kannada, Karnataka 581320</div>
+    <div class="legal">© 2026 mumuki.in · Imported &amp; marketed in India by Beauty Mart Pvt Ltd, Bhatkal, Karnataka</div>
   </div>
 </footer>
 <a class="wa-float" href="https://wa.me/{WA}?text=Hi%20MUMUKI%20India!" aria-label="Chat on WhatsApp">{WA_SVG}</a>
